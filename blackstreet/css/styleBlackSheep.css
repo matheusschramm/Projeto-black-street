@@ -248,6 +248,59 @@ body {
     font-size: 1.1rem;
 }
 
+/* Estabelecimento: header com imagem à esquerda e texto à direita */
+.div_titulo_blackSheep {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #1a1a1a;
+}
+
+.div_titulo_blackSheep .establishment-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.div_titulo_blackSheep .title-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente dentro do espaço restante */
+    align-items: center; /* centraliza horizontalmente */
+}
+
+.div_titulo_blackSheep .title-text h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.div_titulo_blackSheep .title-text .category {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    .div_titulo_blackSheep {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div_titulo_blackSheep .establishment-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
 .detail-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,8 +347,55 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.cardapio_btn {
+    margin-bottom: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    /* use float to align right inside the parent container */
+    float: right;
+    margin-right: 0;
+}
+
 .back-btn:hover {
     background-color: var(--secondary-color);
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cardapio-navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cardapio-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Botão cardápio: centraliza em telas menores */
+@media (max-width: 768px) {
+    .cardapio_btn {
+        float: none;
+        display: block;
+        margin: 1rem auto 2rem;
+    }
 }
 
 /* Rodapé */
@@ -395,5 +495,84 @@ body {
 
     .detail-header h1 {
         font-size: 1.5rem;
+    }
+}
+
+/* Cardápio: transformar lista em grade com cartão e imagem lateral pequena */
+.cardapio-content h2 {
+    font-size: 30px;
+}
+
+.cardapio-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.cardapio-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.cardapio-content ul li > div:first-child {
+    flex: 1;
+}
+
+.cardapio-content ul li h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.cardapio-content ul li p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.cardapio-content ul li span {
+    display: block;
+    margin-top: 0.6rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.cardapio-content ul li > div:last-child img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .cardapio-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .cardapio-content ul li > div:last-child img {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cardapio-content ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cardapio-content ul li > div:last-child img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 0.6rem;
     }
 }
