@@ -187,7 +187,12 @@ body {
 }
 
 .cafe-bg {
-    background: linear-gradient(135deg, #6f4e37 0%, #8b6f47 100%);
+    background-image: url('../cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
+    border-radius: 15px;
 }
 
 .card-body {
