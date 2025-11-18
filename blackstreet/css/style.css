@@ -179,15 +179,15 @@ body {
 }
 
 .burger-bg {
-    background: linear-gradient(135deg,  red 0%, black 60%);
+    background: linear-gradient(135deg,  gray 0%, black 60%);
 }
 
 .store-bg {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #325c86 0%, black 60%);
 }
 
 .cafe-bg {
-    background: linear-gradient(135deg, #6f4e37 0%, #8b6f47 100%);
+    background: linear-gradient(135deg, #a36b43 0%, black 60%);
 }
 
 .card-body {
