@@ -59,7 +59,34 @@ body {
     gap: 2rem;
 }
 
-.nav-menu a {
+.nav-menu input[type="button"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu input[type="button"]:hover,
+.nav-menu input[type="button"].active {
+    color: var(--accent-color);
+}
+
+.nav-menu input[type="button"].active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.nav-menu a{
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -315,13 +342,13 @@ body {
 }
 
 .info-section {
-    background-color: var(--light-bg);
+    background-color: black;
     padding: 1.5rem;
     border-radius: 8px;
 }
 
 .info-section h3 {
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -329,6 +356,7 @@ body {
 .info-section p {
     margin-bottom: 0.5rem;
     line-height: 1.8;
+    color: white;
 }
 
 .info-section strong {
@@ -499,11 +527,12 @@ body {
 }
 
 /* Cardápio: transformar lista em grade com cartão e imagem lateral pequena */
-.cardapio-content h2 {
-    font-size: 30px;
+.cardapio_content h2 {
+    font-size: 35px;
+    font-style: bold;
 }
 
-.cardapio-content ul {
+.cardapio_content ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -512,40 +541,40 @@ body {
     gap: 1rem;
 }
 
-.cardapio-content ul li {
+.cardapio_content ul li {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
 }
 
-.cardapio-content ul li > div:first-child {
+.cardapio_content ul li > div:first-child {
     flex: 1;
 }
 
-.cardapio-content ul li h3 {
+.cardapio_content ul li h3 {
     margin: 0 0 0.4rem 0;
     font-size: 1.1rem;
     color: var(--primary-color);
 }
 
-.cardapio-content ul li p {
+.cardapio_content ul li p {
     margin: 0;
     color: #555;
     line-height: 1.5;
 }
 
-.cardapio-content ul li span {
+.cardapio_content ul li span {
     display: block;
     margin-top: 0.6rem;
     font-weight: 700;
     color: var(--secondary-color);
 }
 
-.cardapio-content ul li > div:last-child img {
+.cardapio_content ul li > div:last-child img {
     width: 96px;
     height: 96px;
     object-fit: cover;
@@ -553,23 +582,23 @@ body {
 }
 
 @media (max-width: 600px) {
-    .cardapio-content ul {
+    .cardapio_content ul {
         grid-template-columns: 1fr;
     }
 
-    .cardapio-content ul li > div:last-child img {
+    .cardapio_content ul li > div:last-child img {
         width: 72px;
         height: 72px;
     }
 }
 
 @media (max-width: 420px) {
-    .cardapio-content ul li {
+    .cardapio_content ul li {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .cardapio-content ul li > div:last-child img {
+    .cardapio_content ul li > div:last-child img {
         width: 100%;
         max-width: 300px;
         height: auto;

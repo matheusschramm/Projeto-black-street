@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio - Black Sheep Burger</title>
     <link rel="stylesheet" href="../../css/styleBlackSheep.css">
+    <link rel="shortcut icon" href="../../img/blackBurger/iconeBlackSheep.jpg" type="image/x-icon">
 </head>
 <body>
-    <!-- Navegação -->
+    <script src="../../js/Cardapio.js"></script>
+    <script src="../../js/script.js"></script>
     <nav class="cardapio-navbar">
         <div class="container">
             <div class="logo">
-                <img src="../../img/iconeBlackSheep.jpg" alt="Black Sheep Burger" class="logo-img">
+                <img src="../../img/blackBurger/iconeBlackSheep.jpg" alt="Black Sheep Burger" class="logo-img">
             </div>
             <ul class="nav-menu">
-                <li><a href="">Mais Pedidos</a></li>
-                <li><a href="">Smash Burger</a></li>
-                <li><a href="">Gourmet Burger</a></li>
-                <li><a href="" class="active">Mega Burger</a></li>
-                <li><a href="">Combos!</a></li>
-                <li><a href="">Porções & Adicionais</a></li>
-                <li><a href="">Doces</a></li>
-                <li><a href="">Bebidas</a></li>
+                <li><input type="button" onclick="goTo('smashBurgers')" value="Smash Burger"></li>
+                <li><input type="button" onclick="goTo('gourmetBurger')" value="Gourmet Burger"></li>
+                <li><input type="button" onclick="goTo('megaBurger')" value="Mega Burger"></li>
+                <li><input type="button" onclick="goTo('combos')" value="Combos"></li>
+                <li><input type="button" onclick="goTo('porcoesAdicionais')" value="Porções & Adicionais"></li>
+                <li><input type="button" onclick="goTo('doces')" value="Doces"></li>
+                <li><input type="button" onclick="goTo('bebidas')" value="Bebidas"></li>
 
             </ul>
             <div class="hamburger">
@@ -41,9 +42,9 @@
             </div>
         </div>
 
-        <div class="cardapio-content">
+        <div class="cardapio_content">
             <div>
-                <h2 class="titulos_menus">Smash Burgers</h2>
+                <h2 id= "smashBurgers" class="titulos_menus">Smash Burgers</h2>
                 <ul>
                     <li>
                         <div>
@@ -58,7 +59,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/smashClassic.avif" alt="">
+                            <img src="../../img/blackBurger/smashClassic.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -74,7 +75,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/smashEgg.avif" alt="">
+                            <img src="../../img/blackBurger/smashEgg.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -90,7 +91,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/smashSalad.avif" alt="">
+                            <img src="../../img/blackBurger/smashSalad.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -106,14 +107,14 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/smashBacon.avif" alt="">
+                            <img src="../../img/blackBurger/smashBacon.avif" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="titulos_menus">Gourmet Burgers</h2>
+                <h2 id="gourmetBurger" class="titulos_menus">Gourmet Burgers</h2>
                 <ul>
                     <li>
                         <div>
@@ -128,14 +129,14 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/gourmetVegan.avif" alt="">
+                            <img src="../../img/blackBurger/gourmetVegan.avif" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="titulos_menus">Mega Burger</h2>
+                <h2 id="megaBurger" class="titulos_menus">Mega Burger</h2>
                 <ul>
                     <li>
                         <div>
@@ -150,7 +151,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/megaQuarterBlack.avif" alt="">
+                            <img src="../../img/blackBurger/megaQuarterBlack.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -166,14 +167,14 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/megaBigBlackSheep.avif" alt="">
+                            <img src="../../img/blackBurger/megaBigBlackSheep.avif" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="titulos_menus">Combos!</h2>
+                <h2 id="combos" class="titulos_menus">Combos!</h2>
                 <ul>
                     <li>
                         <div>
@@ -188,7 +189,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/combosOvelhaNegra.avif" alt="">
+                            <img src="../../img/blackBurger/combosOvelhaNegra.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -204,14 +205,14 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/megaBigBlackSheep.avif" alt="">
+                            <img src="../../img/blackBurger/megaBigBlackSheep.avif" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="titulos_menus">Porções e Adicionais</h2>
+                <h2 id="porcoesAdicionais" class="titulos_menus">Porções e Adicionais</h2>
                 <ul>
                     <li>
                         <div>
@@ -226,7 +227,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/porcaoBatataPequena.avif" alt="">
+                            <img src="../../img/blackBurger/porcaoBatataPequena.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -242,7 +243,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/porcaoBatataGrande.avif" alt="">
+                            <img src="../../img/blackBurger/porcaoBatataGrande.avif" alt="">
                         </div>
                     </li>
                     <li>
@@ -258,26 +259,242 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../img/porcaoBatataGrande.avif" alt="">
+                            <img src="../../img/blackBurger/porcaoBatataGrande.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Onion Rings Pequeno</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Deliciosos anéis de cebola empanados, super crocantes!
+                                </p>
+                                <span>R$ 16,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/porcaoOnionRings.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Aipim Frito Pequeno</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Feitos na casa, macios por dentro e crocantes por fora!
+                                </p>
+                                <span>R$ 16,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/porcaoAipimFrito.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Aipim Frito Grande</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Feitos na casa, macios por dentro e crocantes por fora!
+                                </p>
+                                <span>R$ 34,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/porcaoAipimFritoGrande.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Iscas de Frango Empanados Pequeno</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Iscas de peito de frango feitas na casa. Empanadas na farinha panko. Sabor e crocância em um só lugar!
+                                </p>
+                                <span>R$ 16,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/porcaoIscasFrango.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Iscas de Frango Empanados Grande</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Iscas de peito de frango feitas na casa. Empanadas na farinha panko. Sabor e crocância em um só lugar!
+                                </p>
+                                <span>R$ 66,30</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/porcaoIscasFrangoGrande.jpg" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
-            
-        
+
+            <div>
+                <h2 id="doces" class="titulos_menus">Doces</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Cookie Floresta Negra</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Cookie artesanal de chocolate meio amargo com cerejas marraschino em calda.
+                                </p>
+                                <span>R$ 8,99</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/docesCookieFloresta.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Cookie Tradicional</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Cookie artesanal de chocolate meio amargo com chocolate ao leite.
+                                </p>
+                                <span>R$ 8,99</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/docesCookieTradicional.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Cookie White</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Cookie artesanal de chocolate branco com amêndoas laminadas tostadas.
+                                </p>
+                                <span>R$ 8,99</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/docesCookieWhite.avif" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Brownie</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    Brownie artesanal com chocolate meio amargo e castanhas do Brasil tostadas. Sabor delicioso e textura perfeita!
+                                </p>
+                                <span>R$ 17,99</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/docesBrownie.avif" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+
+            <div>
+                <h2 id="bebidas" class="titulos_menus">Bebidas</h2>
+                <ul>  
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Agua s/gas</h3>
+                            </div>
+                            <div>
+                                <span>R$ 6,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/bebidasAguasgas.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Agua c/gas</h3>
+                            </div>
+                            <div>
+                                <span>R$ 6,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/bebidasAguacgas.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Coca-Cola</h3>
+                            </div>
+                            <div>
+                                <span>R$ 7,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/bebidasCocaNormal.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Coca-Cola - Zero</h3>
+                            </div>
+                            <div>
+                                <span>R$ 7,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/bebidasCocaZero.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>Guarana</h3>
+                            </div>
+                            <div>
+                                <span>R$ 7,00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/blackBurger/bebidasGuarana.jpg" alt="">
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div> 
         </div>
+    </div>
 
-        
-
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Black Street - Rio do Sul SC. Todos os direitos reservados.</p>
-            <p>Rua Dr. Guilherme Gemballa, 276 - Jardim América | Terça a Domingo a partir das 17:00</p>
+            <p>Rua Dr. Guilherme Gemballa, 276 - Jardim América</p>
         </div>
     </footer>
 
-    <!-- <script src="../js/script.js"></script> -->
 </body>
 </html>
-<!DOCTYPE html>
