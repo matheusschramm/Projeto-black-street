@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'BlackStreet';
+    src: url('../fonts/BlackStreet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CursiveBar';
+    src: url('Barbie.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #ff6b6b;
@@ -239,18 +253,17 @@ body {
 }
 
 .detail-header h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5rem;
+    font-family: 'BlackStreet', serif;
+    font-size: 3rem;
     color: var(white);
     margin-bottom: 0.5rem;
 }
 
 .detail-header .category {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1.5px;
+    font-family: 'CursiveBar', cursive;
     color: white;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 .detail-content {
